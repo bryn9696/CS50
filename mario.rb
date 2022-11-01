@@ -1,4 +1,5 @@
 def mario
+  print "what height? "
   height = gets.chomp.to_i
   i = 1
   while i <= height
