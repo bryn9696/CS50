@@ -13,11 +13,16 @@ public class ceasar {
   public static void main(String[] args) {
     String input = userInput();
     char[] stringToChar = input.toCharArray();
+    int key = 13;
 
     for (int i = 0; i < stringToChar.length; i++) {
       Boolean letter = Character.isLetter(input.charAt(i));
       if (letter) 
-        stringToChar[i]++;
+        // check if midpoint or above of ASCII alphabet
+        if ( stringToChar[i] >= 77 && stringToChar[i] <= 90 || stringToChar[i] >= 109 )
+          stringToChar[i] -= (26 - key);
+        else
+          stringToChar[i] += key;
     }
     System.out.println(stringToChar);
   }
