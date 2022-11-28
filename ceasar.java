@@ -18,7 +18,7 @@ public class ceasar {
     for (int i = 0; i < stringToChar.length; i++) {
       Boolean letter = Character.isLetter(input.charAt(i));
       if (letter) 
-        // check if midpoint or above of ASCII alphabet
+        // check midpoint of ASCII alphabet
         if ( stringToChar[i] >= 77 && stringToChar[i] <= 90 || stringToChar[i] >= 109 )
           stringToChar[i] -= (26 - key);
         else
