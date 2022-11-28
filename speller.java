@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class speller {
@@ -8,12 +10,16 @@ public class speller {
     scanner.close();
 
     String word = input.toLowerCase();
+    String[] words = word.split(" ");
 
+    System.out.println(Arrays.toString(words));
     String[] dictionary = {"how", "toast", "beach", "computer", "nest"};
 
     for (int i = 0; i < dictionary.length; i++) {
-      if (word.equals(dictionary[i])) {
-        System.out.println(input + " = " + dictionary[i]);
+      for (int j = 0; j < words.length; j++) {
+        if (words[j].equals(dictionary[i])) {
+          System.out.println(words[j] + " = " + dictionary[i]);
+        }
       }
     }
 
