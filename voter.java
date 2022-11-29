@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class voter {
   
   public static void main(String[] args) {
-  // voter
   String[] preferencesOne = new String[5];
   String[] options = {"Bob", "Alice", "Bryn", "Ned", "Emma"};
   List<String> inputs = new ArrayList<>();
@@ -24,7 +23,6 @@ public class voter {
 
     for (int i = 0; i < options.length; i++) {
       if (name.equals(options[i])) {
-        // System.out.println(inputs.get(0));
         preferencesOne[j] = inputs.get(0);
         System.out.println(Arrays.toString(preferencesOne));
       }
