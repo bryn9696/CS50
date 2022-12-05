@@ -18,4 +18,9 @@ for j in range( height ):
     for i in range( j + 1 ):
         print( "#", end = "" )
 
+    print( "  ", end = "" )
+    
+    for k in range( j + 1 ):
+          print( "#", end = "" )
+
     print()
