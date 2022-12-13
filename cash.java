@@ -1,9 +1,13 @@
+import java.util.Scanner;
+
 public class cash {
   public static void main(String[] args) {
-    double change = 0.75;
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter change: ");
+    double change = scanner.nextDouble();
+    scanner.close();
 
     int coins = (int) (change * 100);
-
     int count = 0;
 
     while (coins > 0) {
