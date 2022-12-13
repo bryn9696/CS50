@@ -21,6 +21,6 @@ for j in range( height ):
     print( "  ", end = "" )
     
     for k in range( j + 1 ):
-          print( "#", end = "" )
+        print( "#", end = "" )
 
     print()
