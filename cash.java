@@ -1,13 +1,17 @@
 import java.util.Scanner;
 
 public class cash {
-  public static void main(String[] args) {
+  static Double userInput() {
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter change: ");
+    System.out.print("Enter special word: ");
     double change = scanner.nextDouble();
     scanner.close();
+  
+    return change;
+  }
 
-    int coins = (int) (change * 100);
+  public static void main(String[] args) {
+    int coins = (int) (userInput() * 100);
     int count = 0;
 
     while (coins > 0) {
