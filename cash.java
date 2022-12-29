@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class cash {
   static Double userInput() {
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter special word: ");
+    System.out.print("Enter change: ");
     double change = scanner.nextDouble();
     scanner.close();
   
